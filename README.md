@@ -31,7 +31,7 @@ This dashboard is built for a marketing or growth team that needs to quickly und
 
 <img width="2500" height="3645" alt="GA4_Traffic_Source_Dashboard" src="https://github.com/user-attachments/assets/1ae94ce9-22cf-4175-b0c2-27ffea1012c9" />
 
-> 🔗 [Link to Interactive Dashboard](https://datastudio.google.com/reporting/ea37a056-df62-44dd-a779-a45d0baa93c9)
+> 🔗 [click to open interactive dashboard](https://datastudio.google.com/reporting/ea37a056-df62-44dd-a779-a45d0baa93c9)
 
 ---
 
