@@ -1,4 +1,4 @@
-# GA4-Traffic-Source-Dashboard-
+# GA4-Traffic-Source-Dashboard
 Used Google Merch Shop Demo Data to build a dashboard on Looker Studio for a marketing or growth team that needs to quickly understand channel quality, identify where to invest or cut spend, and monitor whether conversion trends are healthy.
 
 **Tools:** Looker Studio · Google Analytics 4 (GA4) · Google Merch Shop Demo Data  
@@ -7,19 +7,19 @@ Used Google Merch Shop Demo Data to build a dashboard on Looker Studio for a mar
 
 ---
 
-## Project Objective
+## Project Objective & Motivation
 
-The Google Merch Shop is growing fast — sessions are up 43% and total users up 62% compared to the prior period. But here's the problem: engagement rate has dropped 39.9% and average engagement time has fallen too. That gap between traffic growth and engagement quality is the core business tension this project investigates.
+The Google Merch Shop is growing fast: sessions increased by 43% and total users increased by 62% compared to the previous year.
+There's one clear problem: engagement rate has dropped 39.9% and average engagement time has fallen too. 
+In this project I analyze exactly this gap between traffic growth and engagement quality.
 
-**The question isn't just "where is the traffic coming from?" — it's "which channels are actually worth it?"**
-
-This dashboard is built for a marketing or growth team that needs to quickly understand channel quality, identify where to invest or cut spend, and monitor whether conversion trends are healthy — all without running a new query every time.
+**The question I answer is not only "where is the traffic coming from?" but also "which channels are actually worth it?"**
 
 ---
 
 ## Business Questions (KPIs)
 
-1. **Which channels drive the most traffic — and which drive the most engaged, converting users?** (Volume vs. quality tradeoff)
+1. **Which channels drive the most traffic & which drive the most engaged users?** (Volume vs. quality)
 2. **What is the revenue contribution of each channel, and which paid channels deliver the best ROI?** (Paid Search vs. organic benchmarks)
 3. **Is new user acquisition growing faster than retained user engagement?** (Acquisition health over time)
 4. **Which landing pages are the strongest entry points into the purchase funnel?** (Page-level conversion efficiency)
@@ -38,33 +38,29 @@ This dashboard is built for a marketing or growth team that needs to quickly und
 ## Dashboard Design — What I Built & Why
 
 ### Controls & Filters
-The dashboard opens with three interactive filters: **Session Default Channel Group**, **Device Category**, and a **Date Range picker**. These are not decorative — they power the cross-filtering logic that makes the entire dashboard reactive. A marketing analyst can click "Paid Search" in the donut chart or filter by "Mobile" in the dropdown and every single chart and table updates instantly. This means one dashboard serves multiple use cases: a channel owner auditing their own traffic, a manager doing a device breakdown, or an exec checking a specific date window.
+The dashboard opens with three interactive filters: **Session Default Channel Group**, **Device Category**, and a **Date Range picker**. With cross-filtering enabled, it makes the entire dashboard reactive. If you click e.g. "Paid Search" in the donut chart or filter by "Mobile" in the dropdown every single chart and table updates. This enables the dashboard to serve multiple use cases and analysis goals.
 
-### Scorecards — The 30-Second Health Check
-The five scorecards at the top (Sessions, Total Users, Engagement Rate, Avg. Engagement Time, Conversions) are designed to answer "are we healthy?" in under 30 seconds. Each card includes a sparkline trend and a percentage change vs. the prior period. I deliberately included both volume metrics (Sessions, Users) *and* quality metrics (Engagement Rate, Avg. Time) side-by-side because they tell opposite stories in this dataset — and that tension is the core insight. A dashboard that only shows sessions would mask a serious engagement problem.
+### Scorecards — Quick overview
+Looking at the five scorecards at the top (Sessions, Total Users, Engagement Rate, Avg. Engagement Time, Conversions) you can quickly answer if the business is "healthy". I included a sparkline trend and a percentage change vs. the previous year. I  included volume metrics (Sessions, Users) as well as quality metrics (Engagement Rate, Avg. Time) which showed me the core problem in this dataset. Sessions and users increased but they struggle with engagement.
 
 ### Donut Chart — Top Channels by Users
-The donut gives an immediate visual of channel share. I chose a donut over a bar chart here because the goal is proportional comparison, not absolute ranking — and because it doubles as a filter control. Clicking any slice cross-filters the entire dashboard to that channel only. The near-equal slice distribution (~10% each for most channels) also flags something important: no single organic channel dominates, which means Direct traffic is artificially inflating the share.
+This chart enables an proportional comparison of channels. Clicking any slice cross-filters the entire dashboard to that channel only. The near-equal slice distribution (~10% each for most channels) also flags something important: no single organic channel dominates, which means Direct traffic is artificially inflating the share.
 
-### Time Series — Users vs. New Users & Conversions (Separate Charts)
-I split these into two separate time series rather than one combined chart. The **Users vs. New Users** chart tracks acquisition health — are we growing the base or just re-engaging the same people? The **Conversions** chart tracks purchase intent independently. Keeping them separate makes it easier to spot divergence: a traffic spike that doesn't produce a conversion spike is a signal problem (wrong audience), not a volume problem.
+### Time Series — Users vs. New Users; Conversions
+The **Users vs. New Users** chart tracks acquisition health. Answers: Are we growing the base or re-engaging the same people? The **Conversions** chart tracks purchase intent independently.
 
-### Channel Performance Table — Acquisition + Behavior + Conversions in One View
-This is the analytical core of the dashboard. I structured it across three column groups — Acquisition (Sessions, Active Users, New Users), Behavior (Engagement Rate, Views per Session, Avg. Engagement Time), and Key Events/Conversions (Key Events, Purchase Revenue) — because that mirrors the actual marketing funnel. You can see not just who shows up, but how they behave, and whether they convert. Conditional formatting highlights high values in blue and low values in yellow, making underperformers visually obvious without needing to sort manually.
+### Channel Performance Table — Acquisition + Behavior + Conversions
+This is the core analytical part of the dashboard. I structured it across three column groups — Acquisition (Sessions, Active Users, New Users), Behavior (Engagement Rate, Views per Session, Avg. Engagement Time), and Key Events/Conversions (Key Events, Purchase Revenue). The table mirrors the marketing funnel. You can see for each channel group, who got acquired, how they behave, and whether they convert.
 
 ### Landing Page Performance Table
-The bottom table answers a different question: not which channel brought the user, but which page they landed on and how engaged they were. This is critical for UX and paid campaign teams — it shows where ad traffic should point, which organic pages are already high-performing, and where the homepage is leaking users.
+This table answers which page the user landed on and how engaged they were.
 
 ---
 
 ## Business Insights — Answering the Questions
 
-> 💡 Each insight includes a **How I got here** section showing exactly which table or chart I looked at and what calculations I ran — so you can verify or replicate the logic directly in the dashboard.
-
----
-
-### 1. Volume ≠ Quality: Direct Traffic Is Dominating — But It Shouldn't Be
-Direct traffic accounts for **71,505 sessions (66% of all traffic)**, generating the most revenue in absolute terms ($97,542). But its engagement rate is only **22.6%** and average engagement time is just 37 seconds — the worst of any meaningful channel. This means the majority of sessions are low-intent: people landing and leaving quickly, possibly from bookmarks, dark social, or misattributed sources. Direct is the biggest channel by volume but the weakest by quality. The traffic surge (+43% sessions) is largely driven by Direct, which explains why overall engagement rate dropped 39.9% even as total volume grew — more traffic, but most of it shallow.
+### 1. Volume ≠ Quality: Direct Traffic is dominating ... but engagement is low 
+Direct traffic accounts for **71,505 sessions (66% of all traffic)**, generating the most revenue in absolute terms ($97,542). But its engagement rate is only **22.6%** and average engagement time is just 37 seconds — the worst of any meaningful channel. This means the majority of sessions are low-intent: people landing and leaving quickly. Direct is the biggest channel by volume but the weakest by quality. The traffic surge (+43% sessions) is largely driven by Direct, which explains why overall engagement rate dropped by 39.9% even as total volume grew.
 
 <details>
 <summary>📊 How I got to this insight</summary>
@@ -76,9 +72,9 @@ Direct traffic accounts for **71,505 sessions (66% of all traffic)**, generating
 
 **Calculation 2 — key events per session (quality check):**
 - Direct: 39,881 key events ÷ 71,505 sessions = **0.56 key events per session**
-- This means the average Direct session doesn't even complete one tracked action
+- This means the average Direct session doesn't complete one tracked action
 
-**Observation:** Scanning the Engagement Rate column row by row, Direct sits at 22.6% while every other meaningful channel is above 60%. That contrast is immediate and flags Direct as a low-quality traffic source despite its volume dominance.
+**Observation:** Scanning the Engagement Rate column row by row, Direct is 22.6% while every other meaningful channel is above 60%. That contrast is immediate and flags Direct as a low-quality traffic source despite its volume dominance.
 
 </details>
 
