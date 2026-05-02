@@ -63,9 +63,9 @@ This table answers which page the user landed on and how engaged they were.
 Direct traffic accounts for **71,505 sessions (66% of all traffic)**, generating the most revenue in absolute terms ($97,542). But its engagement rate is only **22.6%** and average engagement time is just 37 seconds — the worst of any meaningful channel. This means the majority of sessions are low-intent: people landing and leaving quickly. Direct is the biggest channel by volume but the weakest by quality. The traffic surge (+43% sessions) is largely driven by Direct, which explains why overall engagement rate dropped by 39.9% even as total volume grew.
 
 <details>
-<summary>📊 How I got to this insight</summary>
+<summary> How I got to this insight</summary>
 
-**Where I looked:** Channel Performance table — Sessions column and Engagement Rate column.
+Looked at Channel Performance table — Sessions column and Engagement Rate column.
 
 **Calculation 1 — traffic share:**
 - Direct sessions ÷ Grand total sessions = 71,505 ÷ 107,711 = **66%**
@@ -81,19 +81,17 @@ Direct traffic accounts for **71,505 sessions (66% of all traffic)**, generating
 ---
 
 ### 2. Organic Search Is the Highest-Quality Scalable Channel
-With 16,690 sessions, **68.3% engagement rate**, and $31,975 in revenue, Organic Search is the clearest candidate for investment. It brings qualified users who actually explore the site (3.93 views/session, 1:00 avg engagement time). Crucially, Organic Search users generate more key events *per session* than any other high-volume channel — meaning they don't just visit, they act. Growing SEO content and optimising for commercial keywords should be a priority.
+With 16,690 sessions, **68.3% engagement rate**, and $31,975 in revenue, Organic Search is the clearest channel for investment opportunity. It brings qualified users who actually explore the site (3.93 views/session, 1:00 avg engagement time). Crucially, Organic Search users generate more key events *per session* than any other high-volume channel. It means they don't just visit passively, but also act and fulfill key events. Growing SEO content and optimising for commercial keywords should be a priority.
 
 <details>
-<summary>📊 How I got to this insight</summary>
+<summary> How I got to this insight</summary>
 
-**Where I looked:** Channel Performance table — Organic Search row, across all columns.
+I looked at the Channel Performance table —> Organic Search row, across all columns.
 
-**Calculation 1 — key events per session:**
+**Calculation 1 - key events per session:**
 - Organic Search: 19,530 key events ÷ 16,690 sessions = **1.17 key events per session**
-- Direct (for comparison): 39,881 ÷ 71,505 = **0.56 key events per session**
+- Compare with Direct: 39,881 ÷ 71,505 = **0.56 key events per session**
 - Organic Search users complete **2× more tracked actions per session** than Direct users
-
-> **Important GA4 note:** Key events in GA4 are counted at the event level, not the session level. One session can fire multiple key events (e.g. add_to_cart + begin_checkout + purchase each count separately). This is why key events (19,530) can exceed sessions (16,690) for this channel — it's not an error. It's actually a signal of high intent.
 
 **Calculation 2 — revenue per session:**
 - Organic Search: $31,975 ÷ 16,690 = **$1.92 per session**
@@ -105,12 +103,13 @@ With 16,690 sessions, **68.3% engagement rate**, and $31,975 in revenue, Organic
 ---
 
 ### 3. Paid Search Has the Best Revenue-Per-Session Ratio Among All Channels
-Paid Search drives only 3,250 sessions but generates **$19,385 in revenue** — the highest revenue efficiency of any channel. Its engagement metrics are solid too (62.2% engagement rate, 1:13 avg engagement time), confirming it is capturing high-intent buyers, not just casual browsers. The question for the marketing team is whether the current budget is too conservative — this channel has clear room to scale.
+Paid Search drives only 3,250 sessions but generates **$19,385 in revenue** — the highest revenue efficiency of any channel. Its engagement metrics are pretty solid too (62.2% engagement rate, 1:13 avg engagement time), confirming it is capturing high-intent buyers, not just casual browsers. 
+--> Implication for the business: Think about if the current budget is too conservative. Paid search could scale a lot.
 
 <details>
-<summary>📊 How I got to this insight</summary>
+<summary> How I got to this insight</summary>
 
-**Where I looked:** Channel Performance table — Paid Search row, Purchase Revenue and Sessions columns.
+Looked at Channel Performance table — Paid Search row, Purchase Revenue and Sessions columns.
 
 **Calculation — revenue per session across channels:**
 
@@ -122,75 +121,38 @@ Paid Search drives only 3,250 sessions but generates **$19,385 in revenue** — 
 | Direct | 71,505 | $97,542 | $1.36 |
 | Email | 343 | $2,087 | $6.09 |
 
-Paid Search ranks among the top channels for revenue per session, with only Email slightly ahead — and Email has 9× fewer sessions, making it far harder to scale. Paid Search is the most actionable high-ROI lever.
+Paid Search ranks among the top channels for revenue per session, with only Email slightly ahead. But email has much fewer sessions, making it harder to scale. Therefore, Paid Search can be leveraged to generate high ROI.
 
 </details>
 
 ---
 
-### 4. Email Is the Highest-Intent Channel — But Almost Invisible
-Email has only 343 sessions, but its metrics are remarkable: **76.7% engagement rate, 1:57 average engagement time, 6.65 views per session** — the highest of any channel across all three behaviour metrics. Email users are clearly the most motivated visitors. The issue is pure volume — the email list or send frequency is severely underutilised relative to its potential. A 10x increase in email sends, if list quality holds, would be a high-ROI lever.
+### 4. Email Is the Highest-Intent Channel - But Almost Invisible
+Email has only 343 sessions, but its metrics are very good: **76.7% engagement rate, 1:57 average engagement time, 6.65 views per session** —-> scores extermely high across all three behaviour metrics. Email users are the most engaged visitors which presents high potential. The issue is the volume. Reason could be that the email list or send frequency is underutilised.
 
 <details>
-<summary>📊 How I got to this insight</summary>
+<summary> How I got to this insight</summary>
 
-**Where I looked:** Channel Performance table — scanned the Engagement Rate, Avg. Engagement Time, and Views per Session columns from top to bottom across all rows.
+Looked at Channel Performance table — Engagement Rate, Avg. Engagement Time, and Views per Session columns across all rows.
 
 **Observation:** Email ranked #1 in all three behaviour columns simultaneously:
-- Engagement Rate: **76.7%** (highest)
+- Engagement Rate: **76.7%** (very high)
 - Avg. Engagement Time: **1:57** (highest)
 - Views per Session: **6.65** (highest)
 
-Then I checked the Sessions column to flag the volume contrast: **343 sessions** — the second lowest of all channels. The gap between quality (top of every column) and volume (near the bottom) is the core insight. No calculation needed — this is a visual scan of the table.
+Then I checked the Sessions column: **343 sessions** — very low compared to all channels. There is a gap between quality (top) and volume (near bottom).
 
 </details>
 
 ---
 
 ### 5. New Users Are Outpacing Returning Users — A Retention Risk
-The Users vs. New Users time series shows new users consistently running close to total users throughout the month, meaning the site is heavily acquisition-dependent. With 73,691 new users out of 92,154 total, **roughly 80% of all users this month were first-time visitors**. For a merch shop, repeat purchase behaviour and brand loyalty are key revenue drivers — the current acquisition-heavy mix suggests a retention gap that will become expensive if ad costs rise.
-
-<details>
-<summary>📊 How I got to this insight</summary>
-
-**Where I looked:** Two places — the Users vs. New Users time series chart, and the scorecard numbers at the top.
-
-**Visual observation (time series):** The two lines (Total Users and New Users) run very close together for the entire 30-day period. A healthy retention mix would show a clear gap between the two lines, with Total Users meaningfully higher than New Users. Here, the gap is narrow, meaning very few sessions are coming from returning users.
-
-**Calculation (scorecards):**
-- New users: **73,691**
-- Total users: **92,154**
-- New user share: 73,691 ÷ 92,154 = **79.9%**
-
-Nearly 8 in 10 users this month had never visited before. That's the retention problem in one number.
-
-</details>
+The Users vs. New Users time series shows new users are consistently close to total users throughout the month, meaning the site is very much dependent on new acquisitions. With 73,691 new users out of 92,154 total (see scorecard), **roughly 80% (73,691 ÷ 92,154 = **79.9%**) of all users this month were first-time visitors**. For a merch shop, repeat purchase behaviour and brand loyalty are important as they present key revenue drivers. The retention problem needs to be adressed as acquisition will become expensive if e.g. ad costs rise.
 
 ---
 
 ### 6. The Homepage Is a Funnel Leak
-The homepage (`/`) drives 304,655 session starts — far more than any other page — but has only a **27.9% engagement rate**, by far the lowest of any tracked page. Meanwhile, product category pages like `/shop/clearance` (89.6%), `/shop/apparel/mens` (87.2%), and `/shop/new` (82.6%) perform dramatically better. Users who land directly on product pages are far more engaged. This suggests homepage content and CTAs need rethinking, and that paid campaigns should bypass the homepage and land users directly on high-intent product pages.
-
-<details>
-<summary>📊 How I got to this insight</summary>
-
-**Where I looked:** Landing Page Performance table — Session Start column and Engagement Rate column.
-
-**Observation 1 — volume:** Scanned the Session Start column. The homepage (`/`) has 304,655 session starts — more than 3× the next highest page (`/shop/new` at 87,643). It is by far the most common entry point.
-
-**Observation 2 — engagement:** Scanned the Engagement Rate column for the same rows. The homepage sits at **27.9%**, while every product page listed is above 80%:
-
-| Page | Engagement Rate |
-|---|---|
-| `/shop/clearance` | 89.6% |
-| `/shop/apparel/mens` | 87.2% |
-| `/shop/new` | 82.6% |
-| `/shop/lifestyle/bags` | 83.9% |
-| `/` (homepage) | **27.9%** |
-
-The contrast is immediate just by scanning the column — no calculation needed. The homepage is receiving the most traffic and producing the least engagement. That combination defines a funnel leak.
-
-</details>
+Looking at the Landing Page Performance table, the homepage (`/`) drives 304,655 session starts — far more than any other page — but has only a **27.9% engagement rate**, which is pretty low. Meanwhile, product category pages like `/shop/clearance` (89.6%), `/shop/apparel/mens` (87.2%), and `/shop/new` (82.6%) perform dramatically better. Users who land directly on product pages are more engaged. This suggests a redesign of homepage content, and that paid campaigns should land users directly on product pages and not lead to the homepage first.
 
 ---
 
