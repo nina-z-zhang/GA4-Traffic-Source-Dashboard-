@@ -155,34 +155,31 @@ Looking at the Landing Page Performance table, the homepage (`/`) drives 300,802
 
 ---
 
-## Findings & Recommendations
+## Recommendations
 
-**Finding 1: The traffic mix is skewed toward low-engagement Direct traffic.**  
-*Recommendation:* Investigate what is attributing to Direct (implement UTM tagging on all campaign links, especially newsletters and internal promotions). Improving attribution accuracy will likely reveal hidden high-performing channels and help allocate budget more intelligently.
+1. **Investigate Direct traffic**  
+*Recommendation:* Investigate what is attributing to Direct. It could be that "Direct" traffic is actually coming from emails or internal links that are not being tracked properly. Adding UTM tags to those links would reveal where that traffic is really coming from. Improving attribution accuracy will likely reveal hidden high-performing channels and help allocate budget more intelligently.
 
-**Finding 2: Paid Search delivers strong ROI per session but appears underscaled.**  
-*Recommendation:* Increase Paid Search budget incrementally and monitor revenue-per-session as a primary efficiency metric, not just click volume. Test campaign expansion into longer-tail commercial keywords aligned with top-performing product categories (clearance, mens apparel).
+3. **Paid Search delivers strong ROI per session but appears underscaled**  
+*Recommendation:* Increase Paid Search budget incrementally and monitor revenue-per-session, not just click volume. Test campaign expansion into longer-tail commercial keywords aligned with top-performing product categories (e.g. mens apparel, clearance).
 
-**Finding 3: Email is a high-intent, underutilised channel.**  
-*Recommendation:* Prioritise list growth and increase send cadence. Given the 1:59 average engagement time and 6.74 views per session, email users are clearly warmed up and ready to buy. A simple re-engagement or browse-abandonment flow targeting returning users could materially lift revenue without increasing ad spend.
+4. **Utilize Email channel**  
+*Recommendation:* Grow the number of people subscribed to the email list and increase send cadence. Given the 1:59 average engagement time and 6.74 views per session, email users are ready to buy. A simple re-engagement or browse-abandonment flow targeting returning users could lift revenue without increasing ad spend.
 
-**Finding 4: The homepage converts poorly as a landing page.**  
-*Recommendation:* Redirect paid traffic to high-engagement product category pages (`/shop/new`, `/shop/clearance`). A/B test homepage layout to reduce bounce — in particular, add visible, direct-to-category CTAs above the fold.
+5. **Don't use homepage as a landing page that often**  
+*Recommendation:* Redirect paid traffic to product category pages (higher engegament) (`/shop/new`, `/shop/clearance`). A/B test homepage layout to reduce bounce — in particular, add visible CTAs linking directly to product categories in the homepage, so users immediately see where to go.
 
-**Finding 5: Retention is weak — the site runs on new user acquisition.**  
-*Recommendation:* Implement a loyalty or repeat-purchase incentive (discount on second order, wishlist reminders). Track returning user rate as a KPI alongside new user growth. A balanced acquisition-to-retention ratio is healthier long-term, especially if ad costs increase.
+6. **Improve Retention**  
+*Recommendation:* Implement a loyalty or repeated purchase incentive (discount on second order, wishlist reminders, etc.). Track returning user rate as a KPI. 
 
 ---
 
-## Tools & Techniques Used
+## Techniques Used
 
-| Tool | Purpose |
+| Technique | Purpose |
 |---|---|
-| **Looker Studio** | Dashboard design, visualisation, and publishing |
-| **GA4 (Google Analytics 4)** | Source data — sessions, users, events, engagement metrics |
 | **Cross-filtering** | All charts and tables are linked — clicking any element filters the full dashboard |
 | **Conditional formatting** | Heatmap-style colouring in the Channel Performance table to surface outliers visually |
 | **Scorecards with sparklines** | Period-over-period % change for instant trend context |
 | **Dual time series** | Separate charts for user acquisition trends and conversion trends |
 | **Segmented data table** | Column groups (Acquisition / Behavior / Conversions) mirror the marketing funnel structure |
-| **Control filters** | Channel group, device category, and date range filters enable self-serve analysis |
