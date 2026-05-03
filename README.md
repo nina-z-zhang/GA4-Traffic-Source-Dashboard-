@@ -1,7 +1,7 @@
 # GA4-Traffic-Source-Dashboard
 Used Google Merch Shop Demo Data to build a dashboard on Looker Studio for a marketing or growth team that needs to quickly understand channel quality, identify where to invest or cut spend, and monitor whether conversion trends are healthy.
 
-**Tools:** Looker Studio | Google Analytics 4 (GA4)| Google Merch Shop Demo Data  
+**Tools:** Looker Studio | Google Analytics 4 (GA4) | Google Merch Shop Demo Data  
 **Live Dashboard:** [View on Looker Studio](https://datastudio.google.com/reporting/ea37a056-df62-44dd-a779-a45d0baa93c9)  
 **Period analysed:** April 3 – May 2, 2026
 
